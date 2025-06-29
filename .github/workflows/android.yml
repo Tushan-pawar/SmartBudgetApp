@@ -3,7 +3,8 @@ name: Build Android APK
 on:
   push:
     branches:
-      - master
+      - main   # ← Or master, depending on your default branch
+  workflow_dispatch:   # ← Add this to allow manual run
 
 jobs:
   build:
